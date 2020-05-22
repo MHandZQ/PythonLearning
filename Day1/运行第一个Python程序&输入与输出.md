@@ -16,7 +16,7 @@ print('Hello Python')
 
 1，可以直接编译
 
-<img src="C:\Users\77960\AppData\Roaming\Typora\typora-user-images\image-20200522231414405.png" alt="image-20200522231414405"  />
+![1](E:\PythonLearning\Day1\1.png)
 
 2.可以在Terminal执行
 
@@ -27,25 +27,25 @@ PS E:\PythonLearning\Day1> python hello.py
 Hello Python
 ```
 
- 
+ 还可以在Teminal中打开python的交互式命令行
+
+![image-20200523000350233](C:\Users\77960\AppData\Roaming\Typora\typora-user-images\image-20200523000350233.png)
+
+
 
 ## 在CMD中执行
 
 首先进到hello.py文件所在目录下：
 
-![1](C:\Users\77960\Desktop\1.png)
-
-![2](C:\Users\77960\Desktop\2.png)
+![2](E:\PythonLearning\Day1\2.png)
 
 在CMD中可以用more查看文件内容：
 
-![3](C:\Users\77960\Desktop\3.png)
+![3](E:\PythonLearning\Day1\3.png)
 
 再执行：python hello.py即可：
 
-
-
- ![4](C:\Users\77960\Desktop\4.png)
+![4](E:\PythonLearning\Day1\4.png)
 
 
 
@@ -69,7 +69,7 @@ The quick brown fox jumps over the lazy dog
 
 print()会依次打印每个字符串，遇到逗号“,”会输出一个空格，因此，输出的字符串是这样拼起来的：
 
-![5](C:\Users\77960\Desktop\5.png)
+![5](E:\PythonLearning\Day1\5.png)
 
 print()也可以打印整数，或者计算结果：
 
