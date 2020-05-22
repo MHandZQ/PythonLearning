@@ -10,23 +10,22 @@
 
 创建第一个Python文件hello.py，输入：
 
+```python
 print('Hello Python')
-
- 
+```
 
 1，可以直接编译
 
-![img](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
-
- 
+<img src="C:\Users\77960\AppData\Roaming\Typora\typora-user-images\image-20200522231414405.png" alt="image-20200522231414405"  />
 
 2.可以在Terminal执行
 
+```
 PS E:\PythonLearning> cd Day1
 
 PS E:\PythonLearning\Day1> python hello.py
-
 Hello Python
+```
 
  
 
@@ -34,93 +33,21 @@ Hello Python
 
 首先进到hello.py文件所在目录下：
 
-![img](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)![img](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![1](C:\Users\77960\Desktop\1.png)
+
+![2](C:\Users\77960\Desktop\2.png)
 
 在CMD中可以用more查看文件内容：
 
-![img](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![3](C:\Users\77960\Desktop\3.png)
 
 再执行：python hello.py即可：
 
-![img](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
 
- 
 
- 
+ ![4](C:\Users\77960\Desktop\4.png)
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 # 输入和输出
 
@@ -128,33 +55,41 @@ Hello Python
 
 用print()在括号中加上字符串，就可以向屏幕上输出指定的文字。比如输出'hello, world'，用代码实现如下：
 
-\>>> print('hello, world')
+```python
+>>> print('hello, world')
+```
 
 print()函数也可以接受多个字符串，用逗号“,”隔开，就可以连成一串输出：
 
-\>>> print('The quick brown fox', 'jumps over', 'the lazy dog')
+```python
+>>> print('The quick brown fox', 'jumps over', 'the lazy dog')
 
 The quick brown fox jumps over the lazy dog
+```
 
 print()会依次打印每个字符串，遇到逗号“,”会输出一个空格，因此，输出的字符串是这样拼起来的：
 
-![print-explain](file:///C:/Users/77960/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)
+![5](C:\Users\77960\Desktop\5.png)
 
 print()也可以打印整数，或者计算结果：
 
-\>>> print(300)
+```python
+>>> print(300)
 
 300
 
-\>>> print(100 + 200)
+>>> print(100 + 200)
 
 300
+```
 
 因此，我们可以把计算100 + 200的结果打印得更漂亮一点：
 
-\>>> print('100 + 200 =', 100 + 200)
+```python
+>>> print('100 + 200 =', 100 + 200)
 
 100 + 200 = 300
+```
 
 注意，对于100 + 200，Python解释器自动计算出结果300，但是，'100 + 200 ='是字符串而非数学公式，Python把它视为字符串，请自行解释上述打印结果。
 
@@ -162,16 +97,16 @@ print()也可以打印整数，或者计算结果：
 
 现在，你已经可以用`print()`输出你想要的结果了。但是，如果要让用户从电脑输入一些字符怎么办？Python提供了一个`input()`，可以让用户输入字符串，并存放到一个变量里。比如输入用户的名字：
 
-```
+```python
 >>> name = input()
 Michael
 ```
 
-当你输入`name = input()`并按下回车后，Python交互式命令行就在等待你的输入了。这时，你可以输入任意字符，然后按回车后完成输入。
+当你输入`name = input()`并按下回车后，Python交互式命令行就在等待你的输入了。这时，你可以输入任意字符，然后按回车后完成输入。<font color=#FF0000>**input()获得的键入值是字符串类型。**</font>
 
 输入完成后，不会有任何提示，Python交互式命令行又回到`>>>`状态了。那我们刚才输入的内容到哪去了？答案是存放到`name`变量里了。可以直接输入`name`查看变量内容：
 
-```
+```python
 >>> name
 'Michael'
 ```
@@ -188,14 +123,14 @@ Michael
 
 要打印出`name`变量的内容，除了直接写`name`然后按回车外，还可以用`print()`函数：
 
-```
+```python
 >>> print(name)
 Michael
 ```
 
 有了输入和输出，我们就可以把上次打印`'hello, world'`的程序改成有点意义的程序了：
 
-```
+```python
 name = input()
 print('hello,', name)
 ```
@@ -210,7 +145,7 @@ hello, Michael
 
 但是程序运行的时候，没有任何提示信息告诉用户：“嘿，赶紧输入你的名字”，这样显得很不友好。幸好，`input()`可以让你显示一个字符串来提示用户，于是我们把代码改成：
 
-```
+```python
 name = input('please enter your name: ')
 print('hello,', name)
 ```
@@ -241,16 +176,21 @@ hello, Michael
 
 逗号和加号输出结果有细微区别
 
+```
 print("Hello"+name)
 
 请输入你的名字：MH
 
 HelloMH
+```
 
  
 
+```
 print("Hello",name)
 
 请输入你的名字：MH
 
 Hello MH
+```
+
